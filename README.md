@@ -5,7 +5,7 @@ Libraries Used
 
 flask 
 
-suds-jurko (or suds for earliest python versions) 
+suds-jurko (or suds for earliest python versions) to check TC Identity 
 
 functools (wraps) to make a login required wrapper.
 
