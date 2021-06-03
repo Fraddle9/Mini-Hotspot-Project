@@ -1,8 +1,1 @@
-TC: 24109559566
-isim: recep
-soyisim: akkaya
-yýl: 2001
-Giriþ Bilgileri: DOÐRU, Giriþ Saati: 2021-05-28 12:30:30.212046
-
--
 
