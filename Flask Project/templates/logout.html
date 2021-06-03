@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>    
+        <head>
+			<meta charset="UTF-8">
+			<title>Login Screen</title>
+			<link rel="stylesheet" href="{{url_for('static', filename='ilkstyle.css')}}">
+
+		</head>
+
+        <body>
+            <div id="app">
+                <div class="wrapper">
+                    <div class = "flashcss">
+
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for msg in messages %}
+                                    <h1>{{msg}}</h1>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}		
+                    
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

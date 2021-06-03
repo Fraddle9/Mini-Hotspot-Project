@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Configuration Screen</title>
+			<link rel="stylesheet" href="{{url_for('static', filename='sonstyle.css')}}">
+
+		</head>
+	<body>
+		<div id="app">
+			<div class="wrapper">
+				<div class="container">
+					<h1>DHCP Configuration</h1>
+
+					<form method="POST" class="form">
+
+						<input id="subnet" type="text" name="subnet" class="input"  v-model="subnet" placeholder="Enter Subnet" maxlength = "15">
+						<input id="netmask" type="text" name="netmask" class="input"  v-model="netmask" placeholder="Enter your Netmask" maxlength = "15">
+						<input id="gateway" type="text" name="gateway" class="input"  v-model="gateway" placeholder="Enter your Gateway" maxlength = "15">
+						<input id="dnsserver" type="text" name="dnsserver" class="input"  v-model="dnsserver" placeholder="Enter DNS Server" maxlength = "15">
+						<input id="startip" type="text" name="startip" class="input"  v-model="startip" placeholder="Enter Begin IP Adress" maxlength = "15">
+						<input id="endip" type="text" name="endip" class="input"  v-model="endip" placeholder="Enter End IP Adress" maxlength = "15">
+						
+						<button type="submit" name="butonsave" class="button" value="save">Submit</button>
+						<button type="submit" name="butonsave" class="button" value="logout">Log-out</button>
+
+					</form>
+				</div>
+				<div class = "flashcss">
+					
+					{% with messages = get_flashed_messages() %}
+						{% if messages %}
+							{% for msg in messages %}
+								<h1>{{msg}}</h1>
+							{% endfor %}
+						{% endif %}
+					{% endwith %}		
+				
+				</div>
+			</div>
+		<!-- partial -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="/static/sonscript.js"></script>
+		</div>
+	</body>
+</html>
+
