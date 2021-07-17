@@ -1,5 +1,5 @@
 # FlaskProject
-A FLASK website that creates files and flashes messages that helps to configure windows files. 
+a fullstack FLASK project that creates files and flashes messages that helps to configure windows files with html css and js. 
 
 Libraries Used 
 
