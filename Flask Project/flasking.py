@@ -1,8 +1,3 @@
-# cmd den 
-# pip install flask
-# pip install suds-jurko
-
-
 from flask import *
 from functools import wraps
 from datetime import datetime
