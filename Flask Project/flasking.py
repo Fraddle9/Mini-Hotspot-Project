@@ -134,6 +134,6 @@ def config_form_post():
 
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=5172, debug=True)
+    app.run(host="localhost", port=5000, debug=True)
 
     # host="localhost", port=5130, debug=True
