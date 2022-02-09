@@ -9,4 +9,4 @@ suds-jurko (or suds for earliest python versions) to check TC Identity
 
 functools (wraps) to make a login required wrapper.
 
-OpenBSD
+OpenBSD (Operation System)
